@@ -1,0 +1,183 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+header{
+    flex-direction: column;
+    align-items: center;
+    position: static;
+}
+
+body{
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  background-color: rgb(45, 45, 48)
+
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(58, 58, 78);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: rgb(45, 45, 58);
+}
+
+h2 {
+font-size: 2em;
+text-align: center;
+line-height: 2;
+font-style: bold;
+}
+
+h3 {
+font-size: 1.5em;
+text-align: center;
+line-height: 2;
+font-style: bold;
+}
+
+h5 {
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.active{
+  text-decoration: underline;
+  background-color: rgb(38, 38, 49);
+}
+
+.homepage{
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+.img1 {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  height:auto;
+}
+
+.img {
+  display: block;
+  border: 3px solid rgb(0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+}
+
+
+.column {
+  flex: 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.text{
+  font-size: small;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+form{
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.skip {
+display: none;
+}
+
+@media screen and (min-width: 300px){
+  .nav_links{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .nav_links{
+      display: flex;
+      flex-direction: row;
+      height: 55px;
+
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+    
+
+    li {
+      font-size: 1.4em;
+    }
+
+    .text{
+      font-size: medium;
+      text-align: center;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-bottom: 10px;
+    }
+
+
+
+}
+
+
+
+footer{
+  background-color: rgb(58, 58, 78);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  }
